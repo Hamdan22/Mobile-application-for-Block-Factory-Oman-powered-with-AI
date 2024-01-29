@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "686856791071",
+    "project_id": "binsapp-757ed",
+    "storage_bucket": "binsapp-757ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686856791071:android:3e8074467abbf5be2da12a",
+        "android_client_info": {
+          "package_name": "com.example.binsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRKqYfaIUAAQiErnmhTIiCK-5MlQI-zOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".myaccount"
+    android:id="@+id/checkblocks"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/newlogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/thefound"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Blocks"
+            android:textColor="#9C27B0"
+            android:textSize="20dp"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9C27B0"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter house dimensions m2:"
+            android:textColor="#9C27B0"
+
+            />
+
+        <EditText
+            android:layout_width="150dp"
+
+            android:textAlignment="center"
+            android:layout_height="30dp"
+            android:id="@+id/txthightforAI"
+            android:drawablePadding="8dp"
+            android:background="@drawable/custom_edttxt"
+            android:hint="hight"
+            android:textColor="#7E7E7E"
+            />
+        <EditText
+            android:layout_width="150dp"
+
+            android:textAlignment="center"
+            android:layout_height="30dp"
+            android:id="@+id/txtwidthforAI"
+            android:background="@drawable/custom_edttxt"
+            android:hint="width"
+            android:textColor="#7E7E7E"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1000 blocks - 150 OMR"
+
+            android:id="@+id/txtresultFromAI"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/checkbtnAI"
+            android:text="Check"
+            android:textSize="20dp"
+            android:backgroundTint="#9C27B0"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnAIvalueToCart"
+            android:text="Add to cart"
+            android:textSize="20dp"
+            android:backgroundTint="#9C27B0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="#7E7E7E" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- customize -"
+            android:textAlignment="center"
+            android:textColor="#7E7E7E"
+            android:textSize="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="#7E7E7E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How many blocks:"
+            android:textColor="#9C27B0"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_edttxt"
+            android:hint="bricks"
+            android:textAlignment="center"
+            android:id="@+id/txtCustomize"
+            android:textColor="#7E7E7E"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3000 blocks - 450 OMR"
+            android:id="@+id/txtreasultCustomize"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Checkcustomize"
+            android:text="Check"
+            android:textSize="18dp"
+            android:backgroundTint="#9C27B0"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCustomizeToCart"
+            android:text="Add to cart"
+            android:textSize="18dp"
+            android:backgroundTint="#9C27B0"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="3000 blocks - 450 OMR"
+        android:id="@+id/custTxtResult"
+
+        />
+
+        ></LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fetuuure"></FrameLayout>
+
+
+
+</LinearLayout>
